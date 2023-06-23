@@ -27,7 +27,40 @@
         //Call the methods to test them in the Main method below
         static void Main(string[] args)
         {
-            
+            //LukeWarm Section:
+
+            Methods.LargeNumbers();
+
+            Methods.NumbersByThree();
+
+            Console.WriteLine("Let\'s check to see if two numbers are equal \nEnter the first number:");
+            var num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second number:");
+            var num2 = int.Parse(Console.ReadLine());
+            Methods.EqualOrNot(num1, num2);
+
+            Console.WriteLine("Enter a number:");
+            var num3 = int.Parse(Console.ReadLine());
+            Methods.OddOrEven(num3);
+
+            Console.WriteLine("Enter a number:");
+            var num4 = int.Parse(Console.ReadLine());
+            Methods.PositiveOrNegative(num4);
+
+            Console.WriteLine("We need to determine if you are eligble to vote, how old are you?");
+            var votingAge = int.Parse(Console.ReadLine());
+            Methods.OldEnoughToVote(votingAge);
+
+
+            //Heatin Up Section:
+
+            Console.WriteLine("Enter a number:");
+            var range = int.Parse(Console.ReadLine());
+            Methods.WithinRange(range);
+
+            Console.WriteLine("Enter a number to display the numbers multiplication table:");
+            var multi = int.Parse(Console.ReadLine());
+            Methods.MultiTable(multi);
         }
     }
 }
